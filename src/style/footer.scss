@@ -1,0 +1,93 @@
+@import "constants";
+
+
+.footer {
+  height: 250px;
+  width: 100%;
+  background: $footerColor;
+  line-height: 19.2px;
+  margin-top: -16px;
+
+  .logo {
+    flex: 0 0 40%;
+    padding: 15px;
+    height: 100%;
+    margin-top: -65px;
+
+    img {
+      width: 90%;
+    }
+  }
+
+  .data {
+    flex: 0 0 35%;
+    padding: 21px;
+    height: 100%;
+
+    span {
+      @extend %fontExtraBold;
+      font-size: 14px;
+    }
+  }
+
+  .contact {
+    flex: 0 0 25%;
+    padding: 15px;
+    height: 100%;
+
+    .title {
+      @extend %fontExtraBold;
+      font-size: 20px;
+    }
+
+    ul {
+      width: 80%;
+
+      li {
+        margin: .5rem 0;
+
+        .key {
+          @extend %fontExtraBold;
+          font-size: 16px;
+          color: white;
+        }
+
+        .value {
+          @extend %fontSemiBold;
+          font-size: 16px;
+          color: white;
+        }
+      }
+    }
+
+    .portal {
+      button {
+        width: 40px;
+        height: 40px;
+        outline: none !important;
+        box-shadow: none !important;
+        background: transparent;
+        color: white;
+        border-radius: 50%;
+        border: 1px solid #fff;
+        margin-right: 12px;
+        font-size: 29px;
+        margin-right: 12px;
+        position: relative;
+
+        &:hover {
+          background: #fff;
+          color: #1fe63a;
+          font-size: 28px;
+        }
+        i {
+          position: absolute;
+          left: 50%;
+          top: 50%;
+          transform: translate(-50%, -50%);
+        }
+      }
+    }
+  }
+
+}
